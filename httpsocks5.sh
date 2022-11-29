@@ -65,7 +65,7 @@ http_access allow all
 
 # Squid normally listens to port 3128
 #http_port 3128
-http_port 59394
+http_port 22688
 via off
 forwarded_for delete
 
@@ -90,7 +90,7 @@ EOF
 }
 function install_socks5() {
   wget --no-check-certificate https://raw.github.com/Lozy/danted/master/install.sh -O install_proxy.sh
-  bash install_proxy.sh --port=22688 --user=10010 --passwd=10010
+  bash install_proxy.sh --port=22699 --user=10010 --passwd=10010
 }
 install_http
 install_socks5
